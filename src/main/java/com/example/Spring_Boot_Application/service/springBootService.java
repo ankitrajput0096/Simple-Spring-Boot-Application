@@ -25,4 +25,17 @@ public class springBootService {
 	{
 		return topics;
 	}
+	public Topic getTopic(String id)
+	{
+		Topic topic=null;
+		for(Topic t:topics)
+		{
+			if(t.getId().equals(id))
+			{
+				topic=t;
+			}
+		}
+		return topic;
+	}
+	
 }
