@@ -37,5 +37,9 @@ public class springBootService {
 		}
 		return topic;
 	}
+	public void addTopic(Topic topic)
+	{
+		topics.add(topic);
+	}
 	
 }
