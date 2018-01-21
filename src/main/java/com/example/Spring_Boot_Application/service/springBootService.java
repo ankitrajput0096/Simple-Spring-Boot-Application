@@ -41,5 +41,33 @@ public class springBootService {
 	{
 		topics.add(topic);
 	}
+	public void updatetopic(Topic topic,String id)
+	{
+		int count=0;
+		for(Topic t:topics)
+		{
+			if(t.getId().equals(id))
+			{
+				break;
+			}
+			else
+				count+=1;
+		}
+		topics.set(count, topic);	
+	}
+	public void deletetopic(String id)
+	{
+		int count=0;
+		for(Topic t:topics)
+		{
+			if(t.getId().equals(id))
+			{
+				break;
+			}
+			else
+				count+=1;
+		}
+		topics.remove(count);	
+	}
 	
 }

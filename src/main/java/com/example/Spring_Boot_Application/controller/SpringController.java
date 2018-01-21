@@ -42,4 +42,15 @@ public class SpringController {
 	{
 		springbootservice.addTopic(topic);
 	}
+	
+	@RequestMapping(value="/topics/update/{id}",method=RequestMethod.PUT)
+	public void updateTopic(@RequestBody Topic topic,@PathVariable String id)
+	{
+		springbootservice.updatetopic(topic,id);
+	}
+	@RequestMapping(value="/topics/delete/{id}",method=RequestMethod.DELETE)
+	public void deleteTopic(@PathVariable String id)
+	{
+		springbootservice.deletetopic(id);
+	}
 }
