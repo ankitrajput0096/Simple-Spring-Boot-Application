@@ -45,7 +45,7 @@ Your server should be now running on http://localhost:8080
 ## testing endpoints with Postman
 
 1. Install Postman (https://www.getpostman.com)
-2. Import Postman collection from the `project.postman_collection.json` file
+2. Import Postman collection from the `Simple_Spring_boot_application.postman_collection.json` file
 3. Enjoy !!
 
 ## Built With
